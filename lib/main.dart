@@ -11,8 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    const String _title ='Práctica 4';
+    const String _title = 'Práctica 4';
 
     return MaterialApp(
       title: _title,
@@ -34,7 +33,6 @@ class Carrito extends StatefulWidget {
 }
 
 class _CarritoState extends State<Carrito> {
-
   final List<List<String>> productos = [
     [
       "Arándanos",
@@ -108,7 +106,7 @@ class _CarritoState extends State<Carrito> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Color(0xFFD90368),
         title: Text(
           'Práctica 4',
           style: TextStyle(
@@ -122,7 +120,7 @@ class _CarritoState extends State<Carrito> {
               IconButton(
                 icon: Icon(
                   Icons.shopping_cart,
-                  color: Colors.white,
+                  color: Color(0xFFEADEDA),
                 ),
                 onPressed: () {
                   // Acción al presionar el ícono del carrito de compras
@@ -231,9 +229,6 @@ class _CarritoState extends State<Carrito> {
     );
   }
 
-
-
-
   get _posicionContador {
     final cantidad = _cantidadItems;
     if (cantidad < 10) {
@@ -242,7 +237,6 @@ class _CarritoState extends State<Carrito> {
       return 3.0;
     }
   }
-
 }
 
 class LogIn extends StatefulWidget {
@@ -250,7 +244,6 @@ class LogIn extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() => _LogInState();
-
 }
 
 class ProductDetailsScreen extends StatefulWidget {
@@ -267,6 +260,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFD90368),
         title: Text(
           widget.product[0],
           style: TextStyle(fontSize: 20),
@@ -319,9 +313,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   }
 }
 
-
 class _LogInState extends State<LogIn> {
-
   final _controllerContrasena = TextEditingController();
   final _controllerUsuario = TextEditingController();
   bool _submitted = false;
@@ -338,133 +330,119 @@ class _LogInState extends State<LogIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xFFEADEDA),
       appBar: AppBar(
-        title: const Text('Práctica 4'),
+        title: const Text('Tp 4 - Flutter'),
+        backgroundColor: Color(0xFF820263),
       ),
       body: DecoratedBox(
         child: Stack(
           children: [
             Align(
-              alignment: const Alignment(0,-0.5),
+              alignment: const Alignment(0, -0.5),
               child: SizedBox(
                 width: 333,
                 height: 484,
                 child: Card(
                   clipBehavior: Clip.antiAlias,
-                  child: Column(
-                      children: [
-                        Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                    alignment: Alignment.center,
-                                    padding: const EdgeInsets.all(10),
-                                    child: const Text(
-                                      'Práctica 4',
-                                      style: TextStyle(
-                                          color: Colors.black54,
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 30),
-                                    )),
-                                Container(
-                                    alignment: Alignment.center,
-                                    padding: const EdgeInsets.all(10),
-                                    child: const Text(
-                                      'Iniciar Sesión',
-                                      style: TextStyle(fontSize: 20),
-                                    )),
-                                Container(
-                                  padding: const EdgeInsets.all(10),
-                                  child: ValueListenableBuilder(
-                                      valueListenable: _controllerUsuario,
-                                      builder: (context, value, _) {
-                                        return TextField(
-                                          controller: _controllerUsuario,
-                                          keyboardType: TextInputType.emailAddress,
-                                          decoration: InputDecoration(
-                                            border: const OutlineInputBorder(),
-                                            labelText: 'Nombre de Usuario',
-                                            errorText: _submitted ? _textoErrorUsuario : null,
-                                          ),
-                                        );
-                                      }
-                                  ),
-                                ),
-                                Container(
-                                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                                  child: ValueListenableBuilder(
-                                      valueListenable: _controllerContrasena,
-                                      builder: (context, value, _) {
-                                        return TextField(
-                                          controller: _controllerContrasena,
-                                          obscureText: _isObscure,
-                                          decoration: InputDecoration(
-                                              border: const OutlineInputBorder(),
-                                              labelText: 'Contraseña',
-                                              errorText: _submitted ? _textoErrorContrasena : null,
-                                              suffixIcon: IconButton(
-                                                icon: Icon(
-                                                    _isObscure ? Icons.visibility : Icons.visibility_off),
-                                                onPressed: () {
-                                                  setState(() {
-                                                    _isObscure = !_isObscure;
-                                                  });
-                                                },
-                                              )
-                                          ),
-                                        );
-                                      }
-                                  ),
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    //forgot password screen
-                                  },
-                                  child: const Text('Olvidé la contraseña',),
-                                ),
-                                Container(
-                                    height: 50,
-                                    width: double.infinity,
-                                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                                    child: ElevatedButton(
-                                      child: const Text('Iniciar Sesión'),
-                                      onPressed: _iniciarSesion,
-                                    )
-                                ),
-                                Row(
-                                  children: <Widget>[
-                                    const Text('¿No tenés una cuenta?'),
-                                    TextButton(
-                                      child: const Text(
-                                        'Crear cuenta',
-                                        style: TextStyle(fontSize: 20),
+                  child: Column(children: [
+                    Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                                alignment: Alignment.center,
+                                padding: const EdgeInsets.all(10),
+                                child: const Text(
+                                  'Aplicaciones Moviles',
+                                  style: TextStyle(
+                                      color: Color(0xFF2E294E),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30),
+                                )),
+                            Container(
+                                alignment: Alignment.center,
+                                padding: const EdgeInsets.all(10),
+                                child: const Text(
+                                  'Iniciar Sesión',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF8C8494)),
+                                )),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              child: ValueListenableBuilder(
+                                  valueListenable: _controllerUsuario,
+                                  builder: (context, value, _) {
+                                    return TextField(
+                                      controller: _controllerUsuario,
+                                      keyboardType: TextInputType.emailAddress,
+                                      decoration: InputDecoration(
+                                        border: const OutlineInputBorder(),
+                                        labelText: 'Usuario',
+                                        hintText: 'Ingrese nombre de Usuario',
+                                        suffixIcon: Icon(
+                                          Icons.alternate_email,
+                                        ),
+                                        errorText: _submitted
+                                            ? _textoErrorUsuario
+                                            : null,
                                       ),
-                                      onPressed: () {
-                                        //signup screen
-                                      },
-                                    )
-                                  ],
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                ),
-                              ],
-                            ))
-                      ]
-                  ),
-
+                                    );
+                                  }),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                              child: ValueListenableBuilder(
+                                  valueListenable: _controllerContrasena,
+                                  builder: (context, value, _) {
+                                    return TextField(
+                                      controller: _controllerContrasena,
+                                      obscureText: _isObscure,
+                                      decoration: InputDecoration(
+                                          border: const OutlineInputBorder(),
+                                          hintText: 'Ingrese Contraseña',
+                                          labelText: 'Contraseña',
+                                          errorText: _submitted
+                                              ? _textoErrorContrasena
+                                              : null,
+                                          suffixIcon: IconButton(
+                                            icon: Icon(_isObscure
+                                                ? Icons.visibility
+                                                : Icons.visibility_off),
+                                            onPressed: () {
+                                              setState(() {
+                                                _isObscure = !_isObscure;
+                                              });
+                                            },
+                                          )),
+                                    );
+                                  }),
+                            ),
+                            const SizedBox(height: 25),
+                            Container(
+                                height: 50,
+                                width: double.infinity,
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                                child: ElevatedButton(
+                                  child: const Text(
+                                    'Iniciar Sesión',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Color(0xFF2E294E),
+                                  ),
+                                  onPressed: _iniciarSesion,
+                                )),
+                          ],
+                        ))
+                  ]),
                 ),
               ),
             ),
-            const Align(
-                alignment: Alignment(0,0.95),
-                child: Text(
-                    'Grupo 4 - UTN FRLP',
-                    style: TextStyle(
-                        color: Colors.black87,
-                        fontWeight: FontWeight.w400
-                    )
-                )
-            )
           ],
         ),
         decoration: const BoxDecoration(
@@ -482,8 +460,8 @@ class _LogInState extends State<LogIn> {
     if (text.isEmpty) {
       return 'La contraseña no puede estar vacía.';
     } else {
-      if (text.length < 7) {
-        return 'La contraseña debe tener 7 o más caracteres.';
+      if (text.length < 10 && text != 'utn1234') {
+        return 'La contraseña debe tener 10 o más caracteres.';
       }
     }
     return null;
@@ -505,7 +483,7 @@ class _LogInState extends State<LogIn> {
     final usuario = _controllerUsuario.value.text;
     final contrasena = _controllerContrasena.value.text;
     setState(() => _submitted = true);
-    if (_textoErrorUsuario == null && _textoErrorContrasena == null){
+    if (_textoErrorUsuario == null && _textoErrorContrasena == null) {
       setState(() => _submitted = false);
       if (usuario == 'moviles@utn' && contrasena == 'utn1234') {
         Navigator.push(
@@ -530,5 +508,4 @@ class _LogInState extends State<LogIn> {
       }
     }
   }
-
 }
