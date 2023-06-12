@@ -35,80 +35,82 @@ class Carrito extends StatefulWidget {
 class _CarritoState extends State<Carrito> {
   final List<List<String>> productos = [
     [
-      "Arándanos",
-      "https://spoonacular.com/cdn/ingredients_250x250/blueberries.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Argentina Titular",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9d96391ff8e147a48e9aaf7300e7cf3d_9366/Camiseta_titular_Argentina_3_estrellas_2022_Blanco_IB3593_01_laydown.jpg",
+      "CAMISETA TITULAR ARGENTINA 3 ESTRELLAS 2022"
     ],
     [
-      "Banana",
-      "https://spoonacular.com/cdn/ingredients_250x250/bananas.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Argentina Suplente F",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8490b132dada442daf4dafc000d7650f_9366/Camiseta_Alternativa_Seleccion_Argentina_Femenina_23_Version_Masculina_Negro_IB8536_01_laydown.jpg",
+      "CAMISETA ALTERNATIVA SELECCIÓN ARGENTINA FEMENINA 23 (VERSIÓN MASCULINA)"
     ],
     [
-      "Cerezas",
-      "https://spoonacular.com/cdn/ingredients_250x250/cherries.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Argentina Titular M",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86efe3125fa24a04aa32aef900f59392_9366/Camiseta_Alternativa_Argentina_22_Azul_HB9220_01_laydown.jpg",
+      "CAMISETA ALTERNATIVA ARGENTINA 22"
     ],
     [
-      "Durazno",
-      "https://spoonacular.com/cdn/ingredients_250x250/peaches.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Argentina 3/4 Icon",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/05709f38959b4cf380bfaec4010c61c9_9366/Camiseta_3-4_Icon_Argentina_Azul_HG4239_01_laydown.jpg",
+      "CAMISETA 3/4 ICON ARGENTINA"
     ],
     [
-      "Frambuesas",
-      "https://spoonacular.com/cdn/ingredients_250x250/raspberries.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Boca Titular",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bfe57f2c696b4724a58baeec01689b53_9366/Camiseta_Titular_Oficial_Boca_Juniors_22-23_Azul_HE6329_01_laydown.jpg",
+      "CAMISETA TITULAR OFICIAL BOCA JUNIORS 22/23"
     ],
     [
-      "Frutillas",
-      "https://spoonacular.com/cdn/ingredients_250x250/strawberries.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Boca Suplente",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d94fbf4a70884a228009af01016426f0_9366/Camiseta_Alternativa_Boca_Juniors_22-23_Blanco_IB9458_01_laydown.jpg",
+      "CAMISETA ALTERNATIVA BOCA JUNIORS 22/23"
     ],
     [
-      "Kiwi",
-      "https://spoonacular.com/cdn/ingredients_250x250/kiwis.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Boca Tercera",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/85f4f67ca5e84cf0a38aae4d0182eead_9366/Tercera_Camiseta_Boca_Juniors_22-23_Amarillo_HB0517_01_laydown.jpg",
+      "TERCERA CAMISETA BOCA JUNIORS 22/23"
     ],
     [
-      "Limón",
-      "https://spoonacular.com/cdn/ingredients_250x250/lemon.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta River Titular",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5799d578d67440e1bcb3af0800f34dd2_9366/Camiseta_de_Juego_Titular_River_Plate_22-23_Blanco_GB7591_01_laydown.jpg",
+      "CAMISETA DE JUEGO TITULAR RIVER PLATE 22/23"
     ],
     [
-      "Manzana",
-      "https://spoonacular.com/cdn/ingredients_250x250/apple.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta River Suplente",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f2121f4fe9534691a1c7af01014b1edb_9366/Camiseta_Alternativa_River_Plate_22-23_Rojo_GB7588_01_laydown.jpg",
+      "CAMISETA ALTERNATIVA RIVER PLATE 22/23"
     ],
     [
-      "Naranja",
-      "https://spoonacular.com/cdn/ingredients_250x250/orange.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Titular Juventus",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/79ad689f28f54df5ab42ade200814ba8_9366/Camiseta_Uniforme_Titular_Oficial_Juventus_22-23_Blanco_H38902_01_laydown.jpg",
+      "CAMISETA UNIFORME TITULAR OFICIAL JUVENTUS 22/23"
     ],
     [
-      "Pera",
-      "https://spoonacular.com/cdn/ingredients_250x250/pear.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Titular Bayern Munich",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a55e527ccdf468b8470ae690130b9dc_9366/Camiseta_de_Titular_FC_Bayern_22-23_Rojo_H39900_01_laydown.jpg",
+      "CAMISETA DE TITULAR FC BAYERN 22/23"
     ],
     [
-      "Pomelo",
-      "https://spoonacular.com/cdn/ingredients_250x250/grapefruit.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Titular Ajax",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3faf904a326949d79e48aea601041d85_9366/Camiseta_Titular_Ajax_Amsterdam_22-23_Rojo_H58243_01_laydown.jpg",
+      "CAMISETA TITULAR AJAX AMSTERDAM 22/23"
     ],
     [
-      "Sandía",
-      "https://spoonacular.com/cdn/ingredients_250x250/watermelon.jpg",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "Camiseta Prepartido Arsenal",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/05dd3dcd9dfc4a4ba5c7add700e55be5_9366/Camiseta_Prepartido_Arsenal_x_TFL_Azul_HF4524_01_laydown.jpg",
+      "CAMISETA PREPARTIDO ARSENAL X TFL"
     ],
   ];
   var _cantidadItems = 0;
 
+//LISTA DE PRODUCTOS
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFEADEDA),
       appBar: AppBar(
         backgroundColor: Color(0xFFD90368),
         title: Text(
-          'Práctica 4',
+          'Aplicación Flutter',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -203,10 +205,15 @@ class _CarritoState extends State<Carrito> {
                     SizedBox(
                       child: IconButton(
                         icon: const Icon(Icons.add_circle),
-                        color: Colors.deepPurpleAccent,
+                        color: Color(0xFF2E294E),
                         onPressed: () {
                           setState(() {
                             _cantidadItems = _cantidadItems + 1;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text("Item agregado al carrito"),
+                              ),
+                            );
                           });
                         },
                       ),
@@ -255,10 +262,12 @@ class ProductDetailsScreen extends StatefulWidget {
   _ProductDetailsScreenState createState() => _ProductDetailsScreenState();
 }
 
+//DETALLES DEL PRODUCTO
 class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFEADEDA),
       appBar: AppBar(
         backgroundColor: Color(0xFFD90368),
         title: Text(
@@ -326,23 +335,24 @@ class _LogInState extends State<LogIn> {
     super.dispose();
   }
 
+//LOGIN
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFFEADEDA),
       appBar: AppBar(
-        title: const Text('Tp 4 - Flutter'),
+        title: const Text('Aplicación Flutter'),
         backgroundColor: Color(0xFF820263),
       ),
       body: DecoratedBox(
         child: Stack(
           children: [
             Align(
-              alignment: const Alignment(0, -0.5),
+              alignment: const Alignment(0, -0.1),
               child: SizedBox(
                 width: 333,
-                height: 484,
+                height: 450,
                 child: Card(
                   clipBehavior: Clip.antiAlias,
                   child: Column(children: [
@@ -364,7 +374,7 @@ class _LogInState extends State<LogIn> {
                                 alignment: Alignment.center,
                                 padding: const EdgeInsets.all(10),
                                 child: const Text(
-                                  'Iniciar Sesión',
+                                  'Ingrese sus credenciales',
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
